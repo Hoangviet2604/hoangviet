@@ -45,6 +45,9 @@ header {
             display: flex;
             li{
                 margin-right: 30px;
+                &:hover {
+                    color: red;
+                }
             }
         }
     }
@@ -114,8 +117,29 @@ header {
    header {
     .icon-menu {
         display: block;
+        .menu {
+          position: absolute;
+          width: 100%;
+          background-color: white;
+          left: 0;
+          display: none;
+           li {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 1px solid black;
+            &:hover {
+                color: red;
+                background-color: aqua;
+            }
+           }
+        }
+        &:hover .menu {
+            display: block;
+        }
+        
     }
        .right {
+
         .menu {
             display: none;
         }
@@ -124,5 +148,6 @@ header {
    .travel {
     background-size: 100% 50%;
   }
-        
+     
+ 
  }
