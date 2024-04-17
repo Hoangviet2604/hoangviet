@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav {
+    height: 50px;
+    background-color: blue;
+}
+.container {
+     display: grid;
+     height: calc(100vh - 50px);
+    .header {
+        background-color:aqua ;
+        grid-area: h;
+    }
+    .feature1 {
+        background-color: yellow;
+        grid-area: f1;
+    }
+    .feature2 {
+        background-color: violet;
+        grid-area: f2;
+    }
+    .feature3 {
+        background-color: red;
+        grid-area: f3;
+    }
+    .signup {
+        background-color: cadetblue;
+        grid-area: s;
+    }
+    .content {
+        background-color: antiquewhite;
+        grid-area: c;
+    }
+}
+
+  /* laptop */
+@media screen and (min-width:1025px) {
+   .container {
+    grid-template-areas: 
+    "h h h"
+    "h h h"
+    "f1 f2 f3"
+    "f1 f2 f3"
+    "f1 f2 f3"
+    "s s s"
+    "c c c"
+    "c c c"
+    "c c c"
+    ;
+   }
+}
+
+/* tablet */
+@media screen and (min-width:741px) and (max-width:1024px) {
+    .container {
+        grid-template-areas: 
+        "h h"
+        "c c"
+        "c c"
+        "s f1"
+        "f2 f3"
+        ;
+       }
+    }
+
+/* mobile */
+@media screen and (max-width:740px) {
+    .container {
+        grid-template-areas: 
+        "h"
+        "c"
+        "c"
+        "s "
+        "f1"
+        "f2"
+        "f3"
+        ;
+       }
+}
