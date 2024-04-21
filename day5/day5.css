@@ -14,7 +14,9 @@ img {
     display: grid;
     gap: 10px;
 }
-
+.title {
+    margin-left: 5%;
+}
 .photo {
     width: 90%;
     margin: 0 auto;
@@ -74,18 +76,15 @@ header {
 }
 
 .travel {
-    padding: 30px 40px 10px 50px;
+    padding: 5%;
     background-image: url(https://cdn.pixabay.com/photo/2017/02/15/10/39/salad-2068220_1280.jpg);
     margin-bottom: 30px;
     background-repeat: no-repeat;
     display: grid;
     gap: 30px;
-    height: 500px;
 }
 
 .news {
-    margin-left: 50px;
-
     h1 {
         margin-bottom: 10px;
         margin-top: 50px;
@@ -134,53 +133,42 @@ header {
 }
 
 .more {
-    width: 70%;
-    margin: 0 auto;
-    margin-bottom: 10px;
     background-color: white;
-
+    padding: 30px;
     .arrow-b {
         display: flex;
-        justify-content: space-around;
-        margin-right: 50px;
-        margin-top: 50px;
-        h1 {
-            margin-left: 35px;
-        }
+        justify-content: space-between;
         .arrow {
             color: rgb(153, 153, 153);
         }
+        i {
+            font-size: 2rem;
 
-        .arrow1 {
-            color: #FA793C;
+        }
+        .fa-circle-arrow-right {
+           color: #FA793C;
         }
     }
 
     hr {
         border: 1px solid black;
-        margin-left: 74px;
-        margin-right: 75px;
     }
 
     h2 {
-        margin-top: 20px;
-
-        margin-left: 74px;
         color: #FA793C;
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
 
     p {
-        margin-top: 10px;
-        margin-left: 74px;
     }
 
 }
 .container {
     .box {
-        .box-img {
-            margin-bottom: 20px;
-        }
         .content {
+            border: 1px solid black;
+             padding: 20px;
             .clock {
                 margin-top: 20px;
                 margin-bottom: 20px;
@@ -188,30 +176,21 @@ header {
         }
     }  
 }
-h1 {
-    margin-left: 80px;
-    margin-bottom: 30px;
-}
+
 .photo {
     .box1 {
         position: relative;
 
         h1 {
             position: absolute;
-            left: 0;
-            bottom: 30px;
-            width: 100%;
-            text-align: start;
-            padding: 50px 10px;
+            left: 15px;
+            bottom: 100px;
             color: white;
         }
         p {
             position: absolute;
-            left: 0;
-            bottom: 30px;
-            width: 100%;
-            text-align: start;
-            padding: 10px 90px;
+            left: 15px;
+            bottom: 30px;       
             color: white;
         }
     }
@@ -220,20 +199,14 @@ h1 {
 
         h1 {
             position: absolute;
-            left: 0;
-            bottom: 30px;
-            width: 100%;
-            text-align: start;
-            padding: 50px 10px;
+            left: 15px;
+            bottom: 100px;
             color: white;
         }
         p {
             position: absolute;
-            left: 0;
-            bottom: 30px;
-            width: 100%;
-            text-align: start;
-            padding: 10px 90px;
+            left: 15px;
+            bottom: 30px;       
             color: white;
         }
     }
@@ -242,6 +215,8 @@ h1 {
             margin-bottom: 20px;
         }
         .content {
+            border: 1px solid black;
+             padding: 20px;
             .clock {
                 margin-top: 20px;
                 margin-bottom: 20px;
@@ -253,6 +228,8 @@ h1 {
             margin-bottom: 20px;
         }
         .content {
+            border: 1px solid black;
+             padding: 20px;
             .clock {
                 margin-top: 20px;
                 margin-bottom: 20px;
@@ -301,6 +278,10 @@ h1 {
 
 /* mobile */
 @media screen and (max-width:740px) {
+    .travel {
+        background-size: 100% 48% !important;
+       padding: 0 5% !important;
+    }
     .photo {
         grid-template-areas:
             "b1"
@@ -308,6 +289,22 @@ h1 {
             "b2"
             "b4"
         ;
+        .box1 {        
+            h1 {       
+                bottom: 140px;              
+            }
+            p {             
+                bottom: 10px;                     
+            }
+        }
+        .box3 {        
+            h1 {
+                bottom: 140px;              
+            }
+            p {
+                bottom: 10px;          
+            }
+        }
     }
 
     header {
